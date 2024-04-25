@@ -1,7 +1,9 @@
 Git
 git
 
+
 https://git-scm.com/
+
 
 [root@localhost ~]# dnf search git | grep ^git
 Last metadata expiration check: 0:00:27 ago on Thu 25 Apr 2024 05:34:18 PM CST.
@@ -34,11 +36,14 @@ gitqlient.x86_64 : Multi-platform Git client written with Qt
 gitweb.noarch : Simple web interface to git repositories
 [root@localhost ~]# 
 
+
 [root@localhost ~]# dnf install -y git
+
 
 [root@localhost ~]# dnf list | grep ^git.x
 git.x86_64                                                                               2.31.1-2.el9.2                                 @AppStream          
 [root@localhost ~]# 
+
 
 [root@localhost ~]# dnf list git
 Last metadata expiration check: 0:12:09 ago on Thu 25 Apr 2024 05:34:18 PM CST.
@@ -46,9 +51,11 @@ Installed Packages
 git.x86_64                                   2.31.1-2.el9.2                                   @AppStream
 [root@localhost ~]# 
 
+
 [root@localhost ~]# which git
 /usr/bin/git
 [root@localhost ~]# 
+
 
 [root@localhost ~]# dnf provides `which git`
 Last metadata expiration check: 0:19:33 ago on Thu 25 Apr 2024 05:34:18 PM CST.
@@ -64,6 +71,7 @@ Filename    : /usr/bin/git
 
 [root@localhost ~]# 
 
+
 [root@localhost ~]# dnf repoquery --list git-core | grep bin
 Last metadata expiration check: 0:20:28 ago on Thu 25 Apr 2024 05:34:18 PM CST.
 /usr/bin/git
@@ -73,9 +81,11 @@ Last metadata expiration check: 0:20:28 ago on Thu 25 Apr 2024 05:34:18 PM CST.
 /usr/bin/git-upload-pack
 [root@localhost ~]# 
 
+
 [root@localhost ~]# git --version
 git version 2.31.1
 [root@localhost ~]# 
+
 
 [root@localhost ~]# git --help
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
@@ -131,6 +141,7 @@ See 'git help git' for an overview of the system.
 
 
 
+
 https://github.com/81855776/2024.git
 
 git@github.com:81855776/2024.git
@@ -139,6 +150,18 @@ gh repo clone 81855776/2024
 
 
 
+
+
+
+
+场景
+
+
+
+
+
+
+
 场景
 
 
@@ -150,16 +173,23 @@ gh repo clone 81855776/2024
 
 
 
+
+
+
+
 场景
 
 
 
 
 
+
 场景
 
 
-场景
+
+
+
 
 
 
