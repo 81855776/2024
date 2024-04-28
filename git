@@ -13,11 +13,33 @@ https://git-scm.com/
 [root@localhost ~]# git --version
 [root@localhost ~]# git --help
 
+[root@localhost ~]# git config --global user.name "test"
+[root@localhost ~]# git config --global user.email "81855776@qq.com"
+[root@localhost ~]# git config --global core.editor vim
+[root@localhost ~]# git config --list --show-origin
+file:/root/.gitconfig   user.name=test
+file:/root/.gitconfig   user.email=81855776@qq.com
+file:/root/.gitconfig   core.editor=vim
+[root@localhost ~]# git config --list
+user.name=test
+user.email=81855776@qq.com
+core.editor=vim
+[root@localhost ~]# 
+
+
+
+
+
 https://github.com/81855776/2024.git
 
 git@github.com:81855776/2024.git
 
 gh repo clone 81855776/2024
+
+
+
+
+
 
 
 
